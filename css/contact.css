@@ -1,0 +1,21 @@
+.form{
+display: flex;
+flex-direction: column;
+gap:10px;
+}
+.form-element{
+width: 300px;
+padding: 10px 5px;
+border: 2px solid #0e8c81;
+border-radius: 8px;
+color: #0e8c81;
+}
+.form button{
+    background-color: #0e8c81;
+    color: #ffffff;
+}
+.form button:hover{
+    background-color: transparent;
+    color: #0e8c81;
+    transition: 0.3s;
+}

@@ -1,0 +1,21 @@
+.skills-container{
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+justify-content:center;
+}
+.skills-card{
+border: 2px solid #0e8c81;
+padding: 20px 30px;
+border-radius: 8px;
+max-width: 180px;
+}
+.skills-card h4{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.skills-card p{
+    text-transform: capitalize;
+    color: #8a8a8a;
+}
