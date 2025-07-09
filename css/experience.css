@@ -1,0 +1,168 @@
+
+/*.experience-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 32px;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Each column holds 2 items */
+/*.timeline-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 45%; 
+}
+
+
+.timeline-item {
+  position: relative;
+  text-align: left;
+  padding-left: 25px;
+}
+
+/* Dot style */
+/*.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #009688;
+  border-radius: 50%;
+}
+
+
+.timeline-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.job-describtion {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-column {
+    width: 100%;
+  }
+}
+*/
+
+
+
+.experience-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.experience-section h2 {
+  font-size: 32px;
+  color: #00796b;
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  gap: 20px;                      
+}
+
+
+.timeline-item {
+  position: relative;
+  width: 45%;                           
+  padding: 20px 20px 20px 40px;          
+  background-color: #f7f7f7;              
+  border-radius: 12px;                   
+}
+
+
+.timeline-item.left {
+  text-align: left;
+  align-self: flex-start;
+}
+
+.timeline-item.right {
+  text-align: left;
+  align-self: flex-end;
+}
+
+/* Bold dot */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 20px;           
+  left: 15px;          
+  width: 12px;
+  height: 12px;
+  background-color: #009688;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.job-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.job-describtion {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline-item::before {
+    left: 15px;
+  }
+}
