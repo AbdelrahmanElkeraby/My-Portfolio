@@ -63,3 +63,32 @@ h2{
     font-size: 32px;
     text-transform: capitalize;
 }
+
+.copy-right{
+    /*bottom: 0;
+    left: 15rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;*/
+
+  position: fixed;     
+  bottom: 0;           
+  left: 0;             
+  padding: 10px 20px;  
+  width: 100%;         
+  text-align: left;  
+  background-color: white;  
+  font-size: 14px;     
+  color: white;       
+  background: transparent; 
+  z-index: 100;
+}
+.social-icons{
+   text-align: center;    
+  position: fixed;       
+  bottom: 40px;          
+  width: 32%;           
+  font-size: 26px;  
+  padding: 10px 0;
+}
