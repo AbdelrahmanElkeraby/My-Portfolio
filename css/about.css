@@ -1,26 +1,209 @@
-.info {
-    color: #8a8a8a;
-    line-height: 28px;
-    font-size: 16px;
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.about-header .highlight {
+    color: var(--primary-color);
+}
+
+.professional-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
     font-weight: 300;
-    max-width: 500px;
+    margin-bottom: 1.5rem;
+}
+
+.divider {
+    width: 100px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.about-intro {
+    max-width: 800px;
+    margin: 0 auto 4rem;
     text-align: center;
 }
 
-/* download button */
-
-.download-btn {
-  display: inline-block;
-  background-color: #0A66C2;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-color);
 }
 
-.download-btn:hover {
-  background-color: #084b99;
+.info-sections {
+    margin-bottom: 3rem;
+}
+
+.info-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.info-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.education .card-icon {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+.skills .card-icon {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.goals .card-icon {
+    background: linear-gradient(135deg, #f46b45, #eea849);
+}
+
+.philosophy .card-icon {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+}
+
+.info-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.card-details {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.card-details li {
+    margin-bottom: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.download-btn, .contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.download-btn {
+    background: var(--primary-color);
+    color: white;
+}
+
+.contact-btn {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.main-footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.copyright {
+    color: var(--text-muted); /* light grey color*/
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-header h1 {
+        font-size: 2.8rem;
+    }
+    
+    .info-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .professional-title {
+        font-size: 1.2rem;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
 }

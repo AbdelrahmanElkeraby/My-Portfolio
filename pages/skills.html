@@ -3,65 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Skills of Abdelrahman Tarek - Front End Developer">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/skills.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Skills | Abdelrahman Tarek - Front End Developer</title>
 </head>
 <body>
     <div class="container">
-   <nav class="sidebar">
-    <ul class="nav-menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/experiance.html">Experience</a></li>
-        <li><a href="/pages/skills.html">Skills</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-
-    </ul>
-   </nav>
-        <div class="content-container">
-       
-<!-- Content Goes Here -->
-<div class="skills-container">
-    <div class="skills-card">
-        <h4>Html</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus!</p>
-    </div>
-        <div class="skills-card">
-        <h4>css</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus!</p>
-    </div>
-        <div class="skills-card">
-        <h4>flexbox</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus!</p>
-    </div>
-        <div class="skills-card">
-        <h4>github</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus!</p>
-    </div>
-        <div class="skills-card">
-        <h4>javascript</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, minus!</p>
-    </div>
-</div>
- <div class="social-icons">
-                <a href="https://www.linkedin.com/in/abdelrhman-tarek-1a7ab2311/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/AbdelrahmanElkeraby" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/abdelrahmantarek0/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
+        <nav class="sidebar">
+            <div class="nav-header">
+                <span class="nav-title">Menu</span>
             </div>
-   <footer>
-             <p class="copy-right">&copy; 2025 Abdelrahman. All rights reserved.</p>
-   </footer>
-
+            <ul class="nav-menu">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="skills.html" class="active"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content-container">
+            <main class="skills-content">
+                <header class="skills-header">
+                    <h1>Technical <span class="highlight">Skills</span></h1>
+                    <div class="divider"></div>
+                    <p class="skills-intro">Here are the key technologies and tools I work with to create exceptional digital experiences.</p>
+                </header>
+                
+                <section class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Semantic markup, accessibility standards, and modern HTML features</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Advanced styling, animations, and responsive design principles</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <h3>Flexbox & Grid</h3>
+                        <p>Modern layout techniques for complex responsive designs</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>ES6+ features, DOM manipulation, and asynchronous programming</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control, collaboration, and CI/CD workflows</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach and cross-browser compatibility</p>
+                    </div>
+                </section>
+            </main>
+            
+            <footer class="main-footer">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abdelrhman-tarek-1a7ab2311/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/AbdelrahmanElkeraby" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abdelrahmantarek0/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; <span id="current-year">2025</span> Abdelrahman Tarek. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
-   </div>
-   
 </body>
 </html>
