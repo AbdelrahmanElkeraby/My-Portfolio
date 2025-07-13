@@ -3,50 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Abdelrahman Tarek - Front End Developer">
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Contact | Abdelrahman Tarek - Front End Developer</title>
 </head>
 <body>
     <div class="container">
-   <nav class="sidebar">
-    <ul class="nav-menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/about.html">About</a></li>
-        <li><a href="/pages/experience.html">Experience</a></li>
-        <li><a href="/pages/skills.html">Skills</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        </ul>
-   </nav>
-        <div class="content-container">
-       
-<!-- Content Goes Here -->
- <h2>Get in touch</h2>
-<form class="form">
-    <input class="form-element" type="text" id="name" name="name" placeholder="Your Name">
-    <input class="form-element" type="email" id="email" name="email" placeholder="Your Email">
-    <textarea class="form-element" name="message" id="message" placeholder="Your message">your message</textarea>
-    <button class="form-element" >Submit</button>
-</form>
-
- <div class="social-icons">
-                <a href="https://www.linkedin.com/in/abdelrhman-tarek-1a7ab2311/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/AbdelrahmanElkeraby" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/abdelrahmantarek0/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
+        <nav class="sidebar">
+            <div class="nav-header">
+                <span class="nav-title">Menu</span>
             </div>
-    <footer>
-        <p class="copy-right">&copy; 2025 Abdelrahman. All rights reserved.</p>
-    </footer>
-
+            <ul class="nav-menu">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content-container">
+            <main class="contact-content">
+                <header class="contact-header">
+                    <h1>Get In <span class="highlight">Touch</span></h1>
+                    <div class="divider"></div>
+                    <p class="contact-intro">Have a project in mind or want to discuss opportunities? Feel free to reach out!</p>
+                </header>
+                
+                <section class="contact-section">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-input textarea" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </section>
+                
+            </main>
+            
+            <footer class="main-footer">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abdelrhman-tarek-1a7ab2311/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/AbdelrahmanElkeraby" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/abdelrahmantarek0/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="copyright">&copy; <span id="current-year">2025</span> Abdelrahman Tarek. All rights reserved.</p>
+            </footer>
+        </div>
     </div>
-   </div>
-   
 </body>
 </html>
